@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Finterest | Node - Express - Mongo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<%- include("./partials/head.ejs"); %>
+</head>
+<body>
+	<%- include("partials/navigation"); %>
+	<div class="gallery-wrapper animate__animated animate__fadeInDown">
+		<% images.forEach(function(image) { %>
+			<div class="card">
+				<div class="image-container">
+					<img src="<%= image.path %>">
+				</div>
+				<div class="image-info">
+					<h5 class="card-title"><%= image.title %></h5>
+					<p class="card-description"><%= image.description %></p>
+					<p class="card-time"><%= format(image.create_at) %></p>
+					<a href="/image/<%= image._id %>"
+						class="card-profile">View Profile</a>
+				</div>
+			</div>
+		<% }) %>
+	</div>
+</body>
+</html>

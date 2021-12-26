@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<%- include("partials/head"); %>
+</head>
+<body>
+	<%- include("partials/navigation"); %>
+	<div class="profile-container animate__animated animate__fadeInDown">
+		<div class="card">
+			<div class="image-container">
+				<img src="<%= image.path %>">
+			</div>
+			<div class="image-info">
+				<h5 class="card-title"><%= image.title %></h5>
+				<p class="card-description"><%= image.description %></p>
+				<p class="card-time"><%= format(image.create_at) %></p>
+				<a href="/image/<%= image._id %>/delete"
+			 class="card-profile">Delete</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

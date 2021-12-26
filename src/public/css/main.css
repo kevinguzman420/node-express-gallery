@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+}
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2em;
+	width: 100%;
+	height: 60px;
+	background-color: #e6e6e6;
+}
+.navigation a {
+	color: #36393b;
+	text-decoration: none;
+}
+.navigation a:nth-of-type(1) {
+	color: #c0261a;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.gallery-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 2em;
+	padding: 2em 0;
+	width: 80%;
+	height: auto;
+	border: 1px solid #e6e6e6;
+}
+.card {
+	margin: 0 1em;
+	width: calc(70% / 3);
+}
+.image-container {
+	width: 100%;
+}
+.image-container img {
+	width: 100%;
+	height: auto;
+}
+.image-info {
+	padding: .3em;
+	background-color: #e6e6e6;
+}
+.image-info .card-title,
+.image-info .card-description,
+.image-info .card-time {.
+	margin: 0;
+	margin-bottom: .4em;
+}
+.image-info .card-description {
+	font-size: .9em;
+}
+.image-info .card-time {
+	font-size: .7em;
+}
+.image-info .card-profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 2.5em;
+	text-decoration: none;
+	color: #fff;
+	background-color: #0379a2;
+	font-size: .8em;
+}
+
+.form-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 2em;
+	padding: 2em 0;
+	box-sizing: border-box;
+}
+.form-wrapper form {
+	border: 1px solid #e6e6e6;
+	padding: 2em 1em; 
+	width: 60%;
+	box-sizing: border-box;
+}
+.form-wrapper form div {
+	margin-bottom: .5em;
+}
+.form-wrapper form input {
+	width: 100%;
+	height: 2em;
+}
+.form-wrapper form textarea {
+	width: 100%;
+}
+.form-wrapper form button {
+	width: 100%;
+	height: 2.5em;
+	color: #fff;
+	border: none;
+	background-color: #0379a2;
+}
+
+.profile-container {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 2em;
+	width: 100%;
+	height: auto;
+}
+.profile-container .card-profile {
+	background-color: red;
+}
